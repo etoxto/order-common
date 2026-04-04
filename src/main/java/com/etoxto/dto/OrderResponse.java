@@ -1,12 +1,16 @@
 package com.etoxto.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.UUID;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class OrderResponse {
-    private final UUID id;
-    private final Long customerId;
-    private final String deliveryAddress;
+    private UUID id;
+    private Long customerId;
+    private String deliveryAddress;
 }
